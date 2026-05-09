@@ -1,0 +1,16 @@
+{
+  "name": "claude-code-tk",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "sweep": "bun run scripts/sweep.ts",
+    "sweep:dry": "bun run scripts/sweep.ts --dry-run",
+    "auto-close-duplicates": "bun run scripts/auto-close-duplicates.ts",
+    "backfill-duplicate-comments": "bun run scripts/backfill-duplicate-comments.ts",
+    "typecheck": "tsc --noEmit"
+  },
+  "devDependencies": {
+    "@types/bun": "latest",
+    "typescript": "^5.6.0"
+  }
+}
